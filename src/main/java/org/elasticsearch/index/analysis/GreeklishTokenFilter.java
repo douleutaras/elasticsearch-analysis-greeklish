@@ -10,8 +10,8 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
 import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
 import org.apache.lucene.util.AttributeSource;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.elasticsearch.common.logging.ESLoggerFactory;
 
 /**
  * @author Tasos Stathopoulos
@@ -26,8 +26,7 @@ public class GreeklishTokenFilter extends TokenFilter {
 	/**
 	 * Elastic Search logger
 	 */
-	 private static final Logger logger = ESLoggerFactory.getLogger(
-			GreeklishConverter.class.getName());
+	private static final Logger logger = LogManager.getLogger(GreeklishConverter.class.getName());
 	/**
 	 * The type of the generated tokens
 	 */

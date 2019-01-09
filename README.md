@@ -1,6 +1,8 @@
 Greeklish Token Filter for ElasticSearch
 ========================================
 
+Build status: [![build_status](https://travis-ci.com/douleutaras/elasticsearch-analysis-greeklish.svg?branch=master)](https://travis-ci.com/douleutaras/elasticsearch-analysis-greeklish)
+
 The Greeklish plugin generates tokens with latin characters from greek tokens.
 
 The generated tokens have the save position and the same offset with the
